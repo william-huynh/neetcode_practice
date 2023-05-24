@@ -1,9 +1,6 @@
-Imports System
-Imports System.Threading
-
-Module Contains_Duplicate
-    Dim j As Integer
-    Function IfDuplicate(array)
+﻿Public Class Contains_Duplicate
+    Shared Function IfDuplicate(array)
+        Dim j As Integer
         For i = 0 To array.Length - 1
             j = i + 1
             While j < array.Length
@@ -16,7 +13,7 @@ Module Contains_Duplicate
         Return False
     End Function
 
-    Function InputArray()
+    Shared Function Duplicate()
         Console.WriteLine("Please input how many integers you would like to add")
         Dim count = CInt(Console.ReadLine())
         Dim array(count - 1) As Integer
@@ -26,17 +23,10 @@ Module Contains_Duplicate
             array(i) = CInt(Console.ReadLine())
         Next
 
-        Dim isDuplicate As Boolean = Contains_Duplicate.IfDuplicate(array)
+        Dim isDuplicate As Boolean = IfDuplicate(array)
         Console.WriteLine(String.Format("nums = [{0}]", String.Join(", ", array)))
         Console.WriteLine(isDuplicate)
 
-        Return array
+        Return 0
     End Function
-
-    Sub Main()
-        Contains_Duplicate.InputArray()
-
-        Console.ReadKey()
-        Environment.Exit(exitCode:=0)
-    End Sub
-End Module
+End Class
