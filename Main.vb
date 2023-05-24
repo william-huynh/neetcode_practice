@@ -8,7 +8,10 @@ Module Main
         ' Valid_Anagram.Anagram()
 
         ' ==//== Two Sum ==//== '
-        Two_Sum.Sum()
+        ' Two_Sum.Sum()
+
+        ' ==//== Top K Frequent ==//== '
+        Top_K_Frequent.Frequent()
 
         Console.ReadKey()
         Environment.Exit(exitCode:=0)
