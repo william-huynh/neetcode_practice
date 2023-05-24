@@ -5,7 +5,10 @@ Module Main
         ' Contains_Duplicate.Duplicate()
 
         ' ==//== Valid Anagram ==//== '
-        Valid_Anagram.Anagram()
+        ' Valid_Anagram.Anagram()
+
+        ' ==//== Two Sum ==//== '
+        Two_Sum.Sum()
 
         Console.ReadKey()
         Environment.Exit(exitCode:=0)
