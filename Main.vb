@@ -20,7 +20,10 @@ Module Main
         ' Longest_Consecutive.Consecutive()
 
         ' ==//== Valid Sudoku ==//== '
-        Valid_Sudoku.Sudoku()
+        ' Valid_Sudoku.Sudoku()
+
+        ' ==//== Valid Palindrome ==//== '
+        Valid_Palindrome.Palindrome()
 
         Console.ReadKey()
         Environment.Exit(exitCode:=0)

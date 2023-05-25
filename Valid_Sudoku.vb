@@ -51,5 +51,7 @@
 
         ' Console result
         Console.WriteLine("is valid: {0}", isValid)
+
+        Return 0
     End Function
 End Class

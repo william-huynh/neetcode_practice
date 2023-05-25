@@ -34,5 +34,7 @@
 
         ' Console result
         Console.WriteLine("consecutive = " + maxLength.ToString())
+
+        Return 0
     End Function
 End Class
