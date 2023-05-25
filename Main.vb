@@ -11,7 +11,10 @@ Module Main
         ' Two_Sum.Sum()
 
         ' ==//== Top K Frequent ==//== '
-        Top_K_Frequent.Frequent()
+        ' Top_K_Frequent.Frequent()
+
+        ' ==//== Product of Array except self ==//== '
+        Product_Of_Array.ProductOfArrayExceptSelf()
 
         Console.ReadKey()
         Environment.Exit(exitCode:=0)
