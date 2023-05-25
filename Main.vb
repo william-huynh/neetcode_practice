@@ -14,7 +14,10 @@ Module Main
         ' Top_K_Frequent.Frequent()
 
         ' ==//== Product of Array except self ==//== '
-        Product_Of_Array.ProductOfArrayExceptSelf()
+        ' Product_Of_Array.ProductOfArrayExceptSelf()
+
+        ' ==//== Longest Consecutive Sequence ==//== '
+        Longest_Consecutive.Consecutive()
 
         Console.ReadKey()
         Environment.Exit(exitCode:=0)

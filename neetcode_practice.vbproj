@@ -6,4 +6,8 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Product_Of_Array.vb~RF3077044.TMP" />
+  </ItemGroup>
+
 </Project>
