@@ -17,7 +17,10 @@ Module Main
         ' Product_Of_Array.ProductOfArrayExceptSelf()
 
         ' ==//== Longest Consecutive Sequence ==//== '
-        Longest_Consecutive.Consecutive()
+        ' Longest_Consecutive.Consecutive()
+
+        ' ==//== Valid Sudoku ==//== '
+        Valid_Sudoku.Sudoku()
 
         Console.ReadKey()
         Environment.Exit(exitCode:=0)
