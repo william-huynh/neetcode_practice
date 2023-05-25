@@ -23,7 +23,10 @@ Module Main
         ' Valid_Sudoku.Sudoku()
 
         ' ==//== Valid Palindrome ==//== '
-        Valid_Palindrome.Palindrome()
+        ' Valid_Palindrome.Palindrome()
+
+        ' ==//== Two Sum II ==//== '
+        Two_Sum_II.Sum()
 
         Console.ReadKey()
         Environment.Exit(exitCode:=0)

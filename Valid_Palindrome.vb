@@ -1,6 +1,12 @@
 ﻿Public Class Valid_Palindrome
+    Shared Function InputString()
+        Console.WriteLine("Please input string to check palindrome")
+        Dim str As String = Console.ReadLine()
+        Return str
+    End Function
+
     Shared Function Palindrome()
-        Dim s = "a1b1a", t As String = ""
+        Dim s = InputString(), t As String = ""
 
         ' Remove non-alphanumeric and change string to lowercase
         For i = 0 To s.Length - 1
