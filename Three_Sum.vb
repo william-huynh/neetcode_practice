@@ -11,6 +11,7 @@
 
         Return array
     End Function
+
     Shared Function Sum()
         Dim nums = InputArray(), start = 0, left, right, target As Integer
         Dim result As New List(Of List(Of Integer))
