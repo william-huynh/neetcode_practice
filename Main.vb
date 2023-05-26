@@ -35,7 +35,10 @@ Module Main
         ' Container_Water.Container()
 
         ' ==//== Trapping rain water ==//== '
-        Trapping_Water.Trap()
+        ' Trapping_Water.Trap()
+
+        ' ==//== Valid Parentheses ==//== '
+        Valid_Parentheses.Parentheses()
 
         Console.ReadKey()
         Environment.Exit(exitCode:=0)
