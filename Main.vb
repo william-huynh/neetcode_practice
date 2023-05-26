@@ -32,7 +32,10 @@ Module Main
         ' Three_Sum.Sum()
 
         ' ==//== Container with most water ==//== '
-        Container_Water.Container()
+        ' Container_Water.Container()
+
+        ' ==//== Trapping rain water ==//== '
+        Trapping_Water.Trap()
 
         Console.ReadKey()
         Environment.Exit(exitCode:=0)
