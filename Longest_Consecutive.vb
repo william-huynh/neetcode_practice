@@ -1,20 +1,7 @@
 ﻿Public Class Longest_Consecutive
-    Shared Function InputArray()
-        Console.WriteLine("Please input how many integers you would like to add")
-        Dim count = CInt(Console.ReadLine())
-        Dim array(count - 1) As Integer
-
-        For i = 0 To count - 1
-            Console.WriteLine("Please enter " + i.ToString() + " integer")
-            array(i) = CInt(Console.ReadLine())
-        Next
-
-        Return array
-    End Function
-
     Shared Function Consecutive()
         ' Initialize
-        Dim array() As Integer = InputArray()
+        Dim array() As Integer = Input.InputIntegerArray()
         Dim hash As HashSet(Of Integer) = New HashSet(Of Integer)(array)
         Dim maxLength As Integer
 

@@ -14,17 +14,11 @@
     End Function
 
     Shared Function Duplicate()
-        Console.WriteLine("Please input how many integers you would like to add")
-        Dim count = CInt(Console.ReadLine())
-        Dim array(count - 1) As Integer
+        Dim arr() As Integer = Input.InputIntegerArray()
 
-        For i = 0 To count - 1
-            Console.WriteLine("Please enter an integer")
-            array(i) = CInt(Console.ReadLine())
-        Next
+        Dim isDuplicate As Boolean = IfDuplicate(arr)
 
-        Dim isDuplicate As Boolean = IfDuplicate(array)
-        Console.WriteLine(String.Format("nums = [{0}]", String.Join(", ", array)))
+        Console.WriteLine(String.Format("nums = [{0}]", String.Join(", ", arr)))
         Console.WriteLine(isDuplicate)
 
         Return 0

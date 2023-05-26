@@ -1,19 +1,6 @@
 ﻿Public Class Container_Water
-    Shared Function InputArray()
-        Console.WriteLine("Please input how many integers you would like to add")
-        Dim count = CInt(Console.ReadLine())
-        Dim array(count - 1) As Integer
-
-        For i = 0 To count - 1
-            Console.WriteLine("Please enter an integer")
-            array(i) = CInt(Console.ReadLine())
-        Next
-
-        Return array
-    End Function
-
     Shared Function Container()
-        Dim arr = InputArray(),
+        Dim arr = Input.InputIntegerArray(),
             left = 0,
             right = arr.Length - 1,
             area = 0, width, height As Integer

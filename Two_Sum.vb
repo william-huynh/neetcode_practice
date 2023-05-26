@@ -1,28 +1,8 @@
 ﻿Public Class Two_Sum
-    Shared Function InputArray()
-        Console.WriteLine("Please input how many integers you would like to add")
-        Dim count = CInt(Console.ReadLine())
-        Dim array(count - 1) As Integer
-
-        For i = 0 To count - 1
-            Console.WriteLine("Please enter " + i.ToString() + " integer")
-            array(i) = CInt(Console.ReadLine())
-        Next
-
-        Return array
-    End Function
-
-    Shared Function Input()
-        Console.WriteLine("Please input the target integer")
-        Dim target = CInt(Console.ReadLine())
-
-        Return target
-    End Function
-
     Shared Function Sum()
         ' Input variables
-        Dim array() As Integer = InputArray()
-        Dim target As Integer = Input()
+        Dim array() As Integer = Input.InputIntegerArray()
+        Dim target As Integer = Input.InputInteger("Please input target number")
         Dim i = 0, j As Integer
 
         ' Find 2 number add up to target

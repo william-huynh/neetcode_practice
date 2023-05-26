@@ -1,7 +1,7 @@
 ﻿Public Class Valid_Anagram
     Shared Function Anagram()
-        Dim string1 As String = Input()
-        Dim string2 As String = Input()
+        Dim string1 As String = Input.InputString("Please input string")
+        Dim string2 As String = Input.InputString("Please input string")
         Dim isAnagram As Boolean = True
 
         If string1.Length <> string2.Length Then
@@ -30,13 +30,4 @@
 
         Return 0
     End Function
-
-    Shared Function Input()
-        Console.WriteLine("Please input string")
-        Dim str As String = Console.ReadLine()
-
-        Return str
-    End Function
-
-
 End Class

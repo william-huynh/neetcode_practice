@@ -1,19 +1,6 @@
 ﻿Public Class Three_Sum
-    Shared Function InputArray()
-        Console.WriteLine("Please input how many integers you would like to add")
-        Dim count = CInt(Console.ReadLine())
-        Dim array(count - 1) As Integer
-
-        For i = 0 To count - 1
-            Console.WriteLine("Please enter an integer")
-            array(i) = CInt(Console.ReadLine())
-        Next
-
-        Return array
-    End Function
-
     Shared Function Sum()
-        Dim nums = InputArray(), start = 0, left, right, target As Integer
+        Dim nums = Input.InputIntegerArray(), start = 0, left, right, target As Integer
         Dim result As New List(Of List(Of Integer))
 
         ' If array less than 2, then exit
